@@ -26,8 +26,8 @@ Hier muss nun zuerst entschieden werden, ob der Post regulär am Mittwoch, oder 
 - Regulärer Post am nächstmöglichen Mittwoch: Bitte die Datei "post_queue.csv" bearbeiten.
 - Post an bestimmtem Datum: Bitte die Datei "post_scheduled.csv" bearbeiten.
 
-Zum Bearbeiten der Datei auf diese klicken und dann oben rechts den kleinen Stift ("edit file") auswählen. Nun kann die Datei bearbeitet werden. Es handelt sich um eine CSV-Datei mit Komma als Trennzeichen. Die Spalten wie füllen:
-- text: Der Text für den Post. Wenn der Text Kommata enthält, bitte den gesamten Text in Anführungszeichen setzen.
+Zum Bearbeiten der Datei auf diese klicken und dann oben rechts den kleinen Stift ("edit file") auswählen. Nun kann die Datei bearbeitet werden. Es handelt sich um eine CSV-Datei mit Semikolon als Trennzeichen. Die Spalten wie folgt füllen:
+- text: Der Text für den Post. Achtung! Hier dürfen keine Semikolons enthalten sein.
 - image: Den exakten Dateinamen der Datei.
 - date (nur in der Tabelle post_scheduled.csv): Das Datum, an dem gepostet werden soll im Format YYYY-MM-DD
 
@@ -49,11 +49,11 @@ Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitu
 *Ohne Datum*
 
 ```
-"Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitung vom 14.09.1851. Gefunden im deutschen Zeitungsportal von Johanna Störiko. https://www.deutsche-digitale-bibliothek.de/newspaper/item/T2I6CYPFWF35YTQCOSUEODVMNJEQKLGV?issuepage=16 #zeitfürzeitungen",jstoe_JennyLind1851.png
+"Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitung vom 14.09.1851. Gefunden im deutschen Zeitungsportal von Johanna Störiko. https://www.deutsche-digitale-bibliothek.de/newspaper/item/T2I6CYPFWF35YTQCOSUEODVMNJEQKLGV?issuepage=16 #zeitfürzeitungen";jstoe_JennyLind1851.png
 ```
 
 *Mit Datum*
 
 ```
-"Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitung vom 14.09.1851. Gefunden im deutschen Zeitungsportal von Johanna Störiko. https://www.deutsche-digitale-bibliothek.de/newspaper/item/T2I6CYPFWF35YTQCOSUEODVMNJEQKLGV?issuepage=16 #zeitfürzeitungen",jstoe_JennyLind1851.png,2025-04-01
+"Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitung vom 14.09.1851. Gefunden im deutschen Zeitungsportal von Johanna Störiko. https://www.deutsche-digitale-bibliothek.de/newspaper/item/T2I6CYPFWF35YTQCOSUEODVMNJEQKLGV?issuepage=16 #zeitfürzeitungen";jstoe_JennyLind1851.png;2025-04-01
 ```
