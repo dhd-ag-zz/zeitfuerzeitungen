@@ -1,4 +1,4 @@
-name: Regular mastodon posts
+name: Wednesday Mastodon Post
 
 on:
   schedule:
