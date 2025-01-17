@@ -1,0 +1,45 @@
+name: Mastodon posts with specific date
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 12 * * *"
+  
+jobs:
+  get_current_csv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get current date
+        run: echo "NOW=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+      - name: Echo current date
+        run: echo $NOW
+      - uses: actions/checkout@v4
+      - name: Post to Mastodon
+        run: |
+          second_line=$(sed -n '2p' post_queue.csv)
+          echo "Second line: $second_line"
+          status_text=$(echo "$second_line" | cut -d ',' -f 1)
+          image_name=$(echo "$second_line" | cut -d ',' -f 2)
+          date=$(echo "$second_line" | cut -d ',' -f 3)
+          echo "Status text: $status_text"
+          echo "Image name: $image_name"
+          echo "Preferred date: $date"
+          if [ $date == $NOW ]
+          then
+            media_id=$(curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.MASTODON }}" \
+            -F "file=@${GITHUB_WORKSPACE}/images/$image_name" \
+            https://fedihum.org/api/v2/media | jq -r '.id')
+            echo "Media ID: $media_id"
+            curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.MASTODON }}" \
+            -H "Content-Type: application/json" \
+            -d '{"status": "'"$status_text"'", "media_ids": ["'$media_id'"]}' \
+            https://fedihum.org/api/v1/statuses
+            sed -i '2d' post_queue.csv
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git config --global user.name "github-actions[bot]"
+            git add post_queue.csv
+            git commit -m "Automated post"
+           git push origin main
+          fi
