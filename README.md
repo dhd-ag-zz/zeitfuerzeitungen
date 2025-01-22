@@ -1,6 +1,6 @@
 # Automatische Mastodon-Posts der Reihe #zeitfürzeitungen
 
-Danke, dass ihr eure kuriosen Funde für die Reihe #zeitfürzeitungen teilen möchtet. Mit dieser Anleitung könnt ihr eure Posts in die Warteschlange aufnehmen. Jeden Mittwoch um 12:00 wird der erste Post aus der Warteschlange automatisch auf Mastodon veröffentlicht. Wenn euer Post an einen bestimmten Tag veröffentlichen möchtet ist auch das möglich.
+Danke, dass ihr eure kuriosen Funde für die Reihe #zeitfürzeitungen teilen möchtet. Mit dieser Anleitung könnt ihr eure Posts in die Warteschlange aufnehmen. Jeden Mittwoch um 12:00 wird der erste Post aus der Warteschlange automatisch auf Mastodon (https://fedihum.org/@zeitungen_zeitschriften) veröffentlicht. Außerdem werden die Posts entsprechend für Instagram (https://www.instagram.com/zeitungen_zeitschriften/) eingeplant. Wenn euer Post an einen bestimmten Tag veröffentlicht werden soll, ist auch das möglich.
 
 ## Schritt 1: Den Post vorbereiten
 
@@ -12,7 +12,7 @@ Alle Posts sollen aus einem Bild des Fundes und einem kurzen Text bestehen.
   - Gefunden von [Name] (falls gewünscht)
   - Ungekürzter Link zum Digitalisat, beginnend mit http:// oder https://. Links werden für das Zeichenlimit immer mit 23 Zeichen gezählt.
   - #zeitfürzeitungen
-  - Gerne dürfen auch weitere, thematisch passende Hashtags verwendet, oder Portale verlinkt werden.
+  - Gerne dürfen auch weitere, thematisch passende Hashtags verwendet, oder Portale verlinkt werden. (Für Instagram werden etwaige von Mastodon abweichende Handles während der Postplanung korrigiert/ergänzt.)
  
 In den nachfolgenden Schritten wird beschrieben, wie der Post über das GitHub-Interface in die Warteschlange aufgenommen werden kann. Wer sich mit GitHub auskennt, kann aber natürlich auch einfach das Repository klonen und lokal bearbeiten.
  
