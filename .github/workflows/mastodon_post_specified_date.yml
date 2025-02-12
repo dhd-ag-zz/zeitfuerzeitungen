@@ -18,9 +18,9 @@ jobs:
         run: |
           second_line=$(sed -n '2p' post_queue.csv)
           echo "Second line: $second_line"
-          status_text=$(echo "$second_line" | cut -d ',' -f 1)
-          image_name=$(echo "$second_line" | cut -d ',' -f 2)
-          date=$(echo "$second_line" | cut -d ',' -f 3)
+          status_text=$(echo "$second_line" | cut -d ';' -f 1)
+          image_name=$(echo "$second_line" | cut -d ';' -f 2)
+          date=$(echo "$second_line" | cut -d ';' -f 3)
           echo "Status text: $status_text"
           echo "Image name: $image_name"
           echo "Preferred date: $date"
