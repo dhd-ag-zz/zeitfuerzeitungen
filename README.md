@@ -49,11 +49,11 @@ Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitu
 *Ohne Datum*
 
 ```
-"Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitung vom 14.09.1851. Gefunden im deutschen Zeitungsportal von Johanna Störiko. https://www.deutsche-digitale-bibliothek.de/newspaper/item/T2I6CYPFWF35YTQCOSUEODVMNJEQKLGV?issuepage=16 #zeitfürzeitungen";jstoe_JennyLind1851.png
+Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitung vom 14.09.1851. Gefunden im deutschen Zeitungsportal von Johanna Störiko. https://www.deutsche-digitale-bibliothek.de/newspaper/item/T2I6CYPFWF35YTQCOSUEODVMNJEQKLGV?issuepage=16 #zeitfürzeitungen;jstoe_JennyLind1851.png
 ```
 
 *Mit Datum*
 
 ```
-"Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitung vom 14.09.1851. Gefunden im deutschen Zeitungsportal von Johanna Störiko. https://www.deutsche-digitale-bibliothek.de/newspaper/item/T2I6CYPFWF35YTQCOSUEODVMNJEQKLGV?issuepage=16 #zeitfürzeitungen";jstoe_JennyLind1851.png;2025-04-01
+Bericht über die Jenny-Lind-Atmosphäre in New Orleans in der Kölnischen Zeitung vom 14.09.1851. Gefunden im deutschen Zeitungsportal von Johanna Störiko. https://www.deutsche-digitale-bibliothek.de/newspaper/item/T2I6CYPFWF35YTQCOSUEODVMNJEQKLGV?issuepage=16 #zeitfürzeitungen;jstoe_JennyLind1851.png;2025-04-01
 ```
